@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>User Registration</h1>
+
+        <form id="registrationForm">
+
+            <label>First Name</label>
+            <input type="text" id="firstName"
+                placeholder="Enter first name" required>
+
+            <label>Second Name</label>
+            <input type="text" id="secondName"
+                placeholder="Enter second name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email"
+                placeholder="Enter email address" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone"
+                placeholder="Enter phone number" required>
+
+            <label>Age</label>
+            <input type="number" id="age"
+                placeholder="Enter age" min="1" max="120" required>
+
+            <label>Gender</label>
+
+            <div class="gender">
+                <label>
+                    <input type="checkbox" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="checkbox" name="gender" value="Female">
+                    Female
+                </label>
+            </div>
+
+            <label>City</label>
+            <select id="city" required>
+                <option value="">-- Select your city --</option>
+                <option>Islamabad</option>
+                <option>Karachi</option>
+                <option>Lahore</option>
+                <option>Rawalpindi</option>
+                <option>Peshawar</option>
+                <option>Quetta</option>
+                <option>Multan</option>
+            </select>
+
+            <label>Complete Address</label>
+            <textarea id="address"
+                placeholder="Enter your complete address"
+                required></textarea>
+
+            <button type="submit" class="submit-btn">
+                Submit
+            </button>
+
+        </form>
+
+        <div class="output" id="output" hidden>
+            <h2>Output</h2>
+
+            <p><b>First Name:</b> <span id="outFirst"></span></p>
+            <p><b>Second Name:</b> <span id="outSecond"></span></p>
+            <p><b>Email:</b> <span id="outEmail"></span></p>
+            <p><b>Phone:</b> <span id="outPhone"></span></p>
+            <p><b>Age:</b> <span id="outAge"></span></p>
+            <p><b>Gender:</b> <span id="outGender"></span></p>
+            <p><b>City:</b> <span id="outCity"></span></p>
+            <p><b>Address:</b> <span id="outAddress"></span></p>
+
+            <button type="button" class="earn-btn"
+                id="earnBtn">Go and earn</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
